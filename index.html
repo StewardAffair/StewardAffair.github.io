@@ -1,8 +1,3 @@
-function FindProxyForURL(url, host) {	var HashMap = (function() {
-  if (!weekdayRange("MON", "FRI")) return "DIRECT";	  var DEFAULT_SIZE = 16;
-
-
-  // All other requests go through port 8080 of proxy.example.com.	  function calculateCapacity(x) {
-  // should that fail to respond, go directly to the WWW:	    if (x >= 1 << 30)
-  return "PROXY 172.25.102.17:9999; DIRECT";	      return 1 << 30;
+function FindProxyForURL(url, host) {
+  return "PROXY 128.199.179.225:3128;
 }
